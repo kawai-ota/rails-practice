@@ -1,0 +1,18 @@
+<h1>People#add</h1>
+<p><%= @msg %></p>
+
+<%= form_tag(controller: 'people', action: 'add') do %>
+  <div>
+    <label for="name">Name</label>
+    <%= text_field_tag("name", "", class: "form-control") %>
+  </div>
+  <div>
+    <label for="age">Age</label>
+    <%= text_field_tag("age", "", class: "form-control") %>
+  </div>
+  <div>
+    <label for="main">Mail</label>
+    <%= text_field_tag("main", "", class: "form-control") %>
+  </div>
+  <input type="submit">
+<% end %>
